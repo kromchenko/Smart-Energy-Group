@@ -16,7 +16,7 @@ class Premium_Maps extends Widget_Base {
     }
 
     public function get_title() {
-		return __( \PremiumAddons\Helper_Functions::get_prefix() . ' Maps', 'premium-addons-for-elementor' );
+		return sprintf( '%1$s %2$s', \PremiumAddons\Helper_Functions::get_prefix(), __('Maps', 'premium-addons-for-elementor') );
 	}
     
     public function get_icon() {

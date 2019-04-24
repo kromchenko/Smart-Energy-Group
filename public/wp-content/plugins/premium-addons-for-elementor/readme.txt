@@ -5,7 +5,7 @@ Donate link: http://premiumaddons.com
 Requires at least: 4.5
 Tested up to: 5.1.1
 Requires PHP: 5.4
-Stable tag: 3.2.8
+Stable tag: 3.3.1
 License: GPL v3.0
 License URI: https://opensource.org/licenses/GPL-3.0
 
@@ -138,6 +138,19 @@ Premium Addons for Elementor is 100% Ads Free, Ads can only be detected from You
 14. Premium Progress Bar Widget for Elementor
 
 == Changelog ==
+
+= 3.3.1 =
+
+- Fixed: `Hover Opacity`, `Title Background` options don't work after v3.3.0.
+
+= 3.3.0 =
+
+- Tweak: Added `Link Title` option in Banner widget.
+- Tweak: Added `_content_template()` method for Banner widget to enhance rendering speed.
+
+= 3.2.9 =
+
+- Tweak: Added `Box Shadow` option for content in Blog widget.
 
 = 3.2.8 =
 

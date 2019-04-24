@@ -11,7 +11,7 @@ class Premium_Title extends Widget_Base {
     }
 
     public function get_title() {
-		return __( \PremiumAddons\Helper_Functions::get_prefix() . ' Title', 'premium-addons-for-elementor' );
+		return sprintf( '%1$s %2$s', \PremiumAddons\Helper_Functions::get_prefix(), __('Title', 'premium-addons-for-elementor') );
 	}
 
     public function get_icon() {
@@ -51,13 +51,13 @@ class Premium_Title extends Widget_Base {
                 'type'          => Controls_Manager::SELECT,
                 'default'       => 'style1',
                 'options'       => [
-                    'style1'        => 'Style1',
-                    'style2'        => 'Style2',
-                    'style3'        => 'Style3',
-                    'style4'        => 'Style4',
-                    'style5'        => 'Style5',
-                    'style6'        => 'Style6',
-                    'style7'        => 'Style7',
+                    'style1'        => __('Style 1', 'premium-addons-for-elementor'),
+                    'style2'        => __('Style 2', 'premium-addons-for-elementor'),
+                    'style3'        => __('Style 3', 'premium-addons-for-elementor'),
+                    'style4'        => __('Style 4', 'premium-addons-for-elementor'),
+                    'style5'        => __('Style 5', 'premium-addons-for-elementor'),
+                    'style6'        => __('Style 6', 'premium-addons-for-elementor'),
+                    'style7'        => __('Style 7', 'premium-addons-for-elementor'),
                     ],
                 'label_block'   => true,
             ]
@@ -88,7 +88,7 @@ class Premium_Title extends Widget_Base {
             [
                 'label'         => __('HTML Tag', 'premium-addons-for-elementor'),
                 'type'          => Controls_Manager::SELECT,
-                'default'       => __('h2','premium-addons-for-elementor'),
+                'default'       => 'h2',
                 'options'       => [
                     'h1'    => 'H1',
                     'h2'    => 'H2',
@@ -565,7 +565,7 @@ class Premium_Title extends Widget_Base {
                 <i class="premium-title-icon <?php echo $settings['premium_title_icon'];?>"></i>
             <?php endif; ?>
             <span <?php echo $this->get_render_attribute_string('premium_title_text'); ?>>
-                <?php echo esc_html($settings['premium_title_text']); ?>
+                <?php echo esc_html( $settings['premium_title_text'] ); ?>
             </span>
         </<?php echo $title_tag; ?>>
     </div>

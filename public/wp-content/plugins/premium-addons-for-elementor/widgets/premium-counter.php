@@ -10,7 +10,7 @@ class Premium_Counter extends Widget_Base {
 	}
 
 	public function get_title() {
-        return __( \PremiumAddons\Helper_Functions::get_prefix() . ' Counter', 'premium-addons-for-elementor' );
+        return sprintf( '%1$s %2$s', \PremiumAddons\Helper_Functions::get_prefix(), __('Counter', 'premium-addons-for-elementor') );
 	}
 
 	public function get_icon() {
@@ -68,7 +68,7 @@ class Premium_Counter extends Widget_Base {
 				'label'			=> __( 'Thousands Separator', 'premium-addons-for-elementor' ),
 				'type'			=> Controls_Manager::TEXT,
                 'dynamic'       => [ 'active' => true ],
-				'description'	=> __( 'Separate coverts 125000 into 125,000', 'premium-addons-for-elementor' ),
+				'description'	=> __( 'Separator converts 125000 into 125,000', 'premium-addons-for-elementor' ),
 				'default'		=> ','
 			]
 		);

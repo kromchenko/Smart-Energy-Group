@@ -9,7 +9,7 @@ class Premium_Image_Button extends Widget_Base {
     }
 
     public function get_title() {
-		return __( \PremiumAddons\Helper_Functions::get_prefix() . ' Image Button', 'premium-addons-for-elementor' );
+		return sprintf( '%1$s %2$s', \PremiumAddons\Helper_Functions::get_prefix(), __('Image Button', 'premium-addons-for-elementor') );
 	}
     
     public function getTemplateInstance() {

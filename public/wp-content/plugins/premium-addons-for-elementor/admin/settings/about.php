@@ -10,7 +10,7 @@ class PA_About {
                 add_submenu_page(
                 'premium-addons',
                 '',
-                esc_html__('About','premium-addons-for-elementor'),
+                __('About','premium-addons-for-elementor'),
                 'manage_options',
                 'premium-addons-about',
                 [ $this, 'pa_about_page' ]

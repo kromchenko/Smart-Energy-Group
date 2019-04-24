@@ -1816,7 +1816,7 @@ a,
 }
 
 .capitalize {
-  text-transform: uppercase;
+  text-transform: none;
 }
 
 img {
@@ -4395,7 +4395,7 @@ body .entry-content .wp-block-latest-posts li {
 }
 
 .footer-adv .ast-no-widget-row .widget-title {
-  text-transform: capitalize;
+  text-transform: none;
 }
 
 @media all and (max-width: 768px) {

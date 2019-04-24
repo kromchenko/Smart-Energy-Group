@@ -15,7 +15,7 @@ class Premium_Pricing_Table extends Widget_Base {
     }
 
     public function get_title() {
-        return __( \PremiumAddons\Helper_Functions::get_prefix() . ' Pricing Table', 'premium-addons-for-elementor' );
+        return sprintf( '%1$s %2$s', \PremiumAddons\Helper_Functions::get_prefix(), __('Pricing Table', 'premium-addons-for-elementor') );
     }
 
     public function get_icon() {

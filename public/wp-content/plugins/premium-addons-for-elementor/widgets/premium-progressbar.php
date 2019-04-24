@@ -11,7 +11,7 @@ class Premium_Progressbar extends Widget_Base {
     }
 
     public function get_title() {
-		return __( \PremiumAddons\Helper_Functions::get_prefix() . ' Progress Bar', 'premium-addons-for-elementor' );
+		return sprintf( '%1$s %2$s', \PremiumAddons\Helper_Functions::get_prefix(), __('Progress Bar', 'premium-addons-for-elementor') );
 	}
     
     public function get_icon() {

@@ -622,7 +622,7 @@ p.demo_store,
 			.from {
 				font-size: 0.67em;
 				margin: -2px 0 0 0;
-				text-transform: uppercase;
+				text-transform: none;
 				color: rgba(desaturate($highlight, 75%), 0.5);
 			}
 		}
@@ -1488,7 +1488,7 @@ p.demo_store,
 		li {
 			float: left;
 			margin-right: 2em;
-			text-transform: uppercase;
+			text-transform: none;
 			font-size: 0.715em;
 			line-height: 1;
 			border-right: 1px dashed darken($secondary, 10%);

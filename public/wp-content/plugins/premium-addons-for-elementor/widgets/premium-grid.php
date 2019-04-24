@@ -6,7 +6,7 @@ if( !defined( 'ABSPATH' ) ) exit;
 
 class Premium_Grid extends Widget_Base {
     
-    public function get_name(){
+    public function get_name() {
         return 'premium-img-gallery';
     }
     
@@ -15,14 +15,14 @@ class Premium_Grid extends Widget_Base {
 	}
     
     public function get_title() {
-		return __( \PremiumAddons\Helper_Functions::get_prefix() . ' Grid', 'premium-addons-for-elementor' );
+		return sprintf( '%1$s %2$s', \PremiumAddons\Helper_Functions::get_prefix(), __('Grid', 'premium-addons-for-elementor') );
 	}
     
-    public function get_icon(){
+    public function get_icon() {
         return 'pa-grid-icon';
     }
     
-    public function get_style_depends(){
+    public function get_style_depends() {
         return [
             'pa-prettyphoto',
         ];
@@ -36,15 +36,15 @@ class Premium_Grid extends Widget_Base {
         ];
     }
     
-    public function is_reload_preview_required(){
+    public function is_reload_preview_required() {
         return true;
     }
     
-    public function get_categories(){
+    public function get_categories() {
         return ['premium-elements'];
     }
     
-    protected function _register_controls(){
+    protected function _register_controls() {
         
         $this->start_controls_section('premium_gallery_general',
             [
@@ -216,7 +216,7 @@ class Premium_Grid extends Widget_Base {
             [
                 'label'         => __('Rotation Degrees', 'premium-addons-for-elementor'),
                 'type'          => Controls_Manager::NUMBER,
-                'description'   => __('Set rotation value in degress', 'premium-addons-for-elementor'),
+                'description'   => __('Set rotation value in degrees', 'premium-addons-for-elementor'),
                 'min'           => -180,
                 'max'           => 180,
                 'selectors'     => [

@@ -25,7 +25,7 @@ class PA_Version_Control {
                 add_submenu_page(
                 'premium-addons',
                 '',
-                esc_html__('Version Control','prmeium-addons-for-elemtnor'),
+                __('Version Control','premium-addons-for-elementor'),
                 'manage_options',
                 'premium-addons-version',
                 [$this, 'pa_version_page']
@@ -79,7 +79,7 @@ class PA_Version_Control {
                <tr class="pa-roll-row">
                   <th>Rollback Version</th>
                   <td>
-                     <div><?php echo  sprintf( '<a target="_blank" href="%s" class="button pa-btn pa-rollback-button elementor-button-spinner">Reinstall Version 3.2.6</a>', wp_nonce_url( admin_url( 'admin-post.php?action=premium_addons_rollback' ), 'premium_addons_rollback' ) ); ?> </div>
+                     <div><?php echo  sprintf( '<a target="_blank" href="%s" class="button pa-btn pa-rollback-button elementor-button-spinner">Reinstall Version 3.3.0</a>', wp_nonce_url( admin_url( 'admin-post.php?action=premium_addons_rollback' ), 'premium_addons_rollback' ) ); ?> </div>
                      <p class="pa-roll-desc"><span>Warning: Please backup your database before making the rollback.</span></p>
                   </td>
                </tr>
@@ -90,9 +90,9 @@ class PA_Version_Control {
                   </th>
                </tr>
                <tr class="pa-beta-row">
-                  <th><?php echo esc_html__('Beta Tester','premium-addons-for-elementor');?></th>
+                  <th><?php echo __('Beta Tester','premium-addons-for-elementor');?></th>
                   <td>
-                     <div><input name="is-beta-tester" id="is-beta-tester" type="checkbox" <?php checked(1, $this->pa_beta_get_settings['is-beta-tester'], true) ?>><span><?php echo esc_html__('Check this box to get updates for beta versions','premium-addons-for-elementor'); ?></span></div>
+                     <div><input name="is-beta-tester" id="is-beta-tester" type="checkbox" <?php checked(1, $this->pa_beta_get_settings['is-beta-tester'], true) ?>><span><?php echo __('Check this box to get updates for beta versions','premium-addons-for-elementor'); ?></span></div>
                      <p class="pa-beta-desc"><span>Please Note: We do not recommend updating to a beta version on production sites.</span></p>
                   </td>
                </tr>

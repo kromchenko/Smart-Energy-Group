@@ -492,16 +492,16 @@
 
   /****** Premium Banner Handler ******/
   var PremiumBannerHandler = function($scope, $) {
-    var bannerElement = $scope.find(".premium_banner");
-    bannerElement.find(".premium_addons-banner-ib").hover(
+    var bannerElement = $scope.find(".premium-banner");
+    bannerElement.find(".premium-banner-ib").hover(
       function() {
         $(this)
-          .find(".premium_addons-banner-ib-img")
+          .find(".premium-banner-ib-img")
           .addClass("active");
       },
       function() {
         $(this)
-          .find(".premium_addons-banner-ib-img")
+          .find(".premium-banner-ib-img")
           .removeClass("active");
       }
     );

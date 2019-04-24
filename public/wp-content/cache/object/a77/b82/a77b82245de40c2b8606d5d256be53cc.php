@@ -1,0 +1,1 @@
+¤«¾\<?php exit; ?>a:1:{s:7:"content";s:74:"/var/www/public/wp-content/plugins/woocommerce/templates/loop/loop-end.php";}

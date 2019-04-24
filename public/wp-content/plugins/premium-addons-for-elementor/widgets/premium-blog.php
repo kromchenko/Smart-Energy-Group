@@ -11,7 +11,7 @@ class Premium_Blog extends Widget_Base {
     }
 
     public function get_title() {
-		return __( \PremiumAddons\Helper_Functions::get_prefix() . ' Blog', 'premium-addons-for-elementor' );
+		return sprintf( '%1$s %2$s', \PremiumAddons\Helper_Functions::get_prefix(), __('Blog', 'premium-addons-for-elementor') );
 	}
 
     public function is_reload_preview_required(){
@@ -320,7 +320,7 @@ class Premium_Blog extends Widget_Base {
             [
                 'label'         => __('Categories Meta', 'premium-addons-for-elementor'),
                 'type'          => Controls_Manager::SWITCHER,
-                'description'   => __('Display or hide categories mata','premium-addons-for-elementor'),
+                'description'   => __('Display or hide categories meta','premium-addons-for-elementor'),
                 'default'       => 'yes',
             ]
         );
@@ -328,7 +328,7 @@ class Premium_Blog extends Widget_Base {
         $this->add_control('premium_blog_comments_meta',
             [
                 'label'         => __('Comments Meta', 'premium-addons-for-elementor'),
-                'description'   => __('Display or hide comments mata','premium-addons-for-elementor'),
+                'description'   => __('Display or hide comments meta','premium-addons-for-elementor'),
                 'type'          => Controls_Manager::SWITCHER,
                 'default'       => 'yes',
             ]
@@ -816,6 +816,14 @@ class Premium_Blog extends Widget_Base {
                 ]
             ]
         );
+
+        $this->add_group_control(
+            Group_Control_Box_Shadow::get_type(),
+                [
+                    'name'          => 'premium_blog_box_shadow',
+                    'selector'      => '{{WRAPPER}} .premium-blog-content-wrapper',
+                ]
+                );
 
         $this->end_controls_section();
         

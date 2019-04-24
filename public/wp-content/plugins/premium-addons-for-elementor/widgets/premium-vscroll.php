@@ -15,7 +15,7 @@ class Premium_Vscroll extends Widget_Base {
     }
      
     public function get_title() {
-        return __( \PremiumAddons\Helper_Functions::get_prefix() . ' Vertical Scroll', 'premium-addons-for-elementor' );
+        return sprintf( '%1$s %2$s', \PremiumAddons\Helper_Functions::get_prefix(), __('Vertical Scroll', 'premium-addons-for-elementor') );
     }
     
     public function get_icon() {

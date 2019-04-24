@@ -2,7 +2,7 @@
 
 namespace PremiumAddons;
 
-if(!defined('ABSPATH')) exit;
+if( ! defined( 'ABSPATH' ) ) exit;
 
 class PA_Gomaps {
     
@@ -82,7 +82,7 @@ class PA_Gomaps {
                </tr>
                <tr>
                   <th>
-                     <h4 class="pa-api-disable-title"><label><?php echo esc_html__('Enable Maps API JS File:','premium-addons-for-elementor'); ?></label><input name="premium-map-disable-api" id="premium-map-disable-api" type="checkbox" <?php checked(1, $this->pa_maps_get_settings['premium-map-disable-api'], true) ?>><span>This will Enable the API JS file if it's not included by another theme or plugin</span></h4>
+                     <h4 class="pa-api-disable-title"><label><?php echo __('Enable Maps API JS File:','premium-addons-for-elementor'); ?></label><input name="premium-map-disable-api" id="premium-map-disable-api" type="checkbox" <?php checked(1, $this->pa_maps_get_settings['premium-map-disable-api'], true) ?>><span>This will Enable the API JS file if it's not included by another theme or plugin</span></h4>
                   </th>
                </tr>
             </table>

@@ -16,7 +16,7 @@ class Premium_Dual_Header extends Widget_Base {
     }
 
     public function get_title() {
-        return __( \PremiumAddons\Helper_Functions::get_prefix() . ' Dual Heading', 'premium-addons-for-elementor' );
+        return sprintf( '%1$s %2$s', \PremiumAddons\Helper_Functions::get_prefix(), __('Dual Heading', 'premium-addons-for-elementor') );
 	}
 
     

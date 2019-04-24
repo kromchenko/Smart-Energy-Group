@@ -4,7 +4,8 @@ namespace Elementor;
 if ( ! defined( 'ABSPATH' ) ) exit; // If this file is called directly, abort.
 
 class Premium_Modalbox extends Widget_Base {
-    public function getTemplateInstance(){
+
+    public function getTemplateInstance() {
         return $this->templateInstance = premium_Template_Tags::getInstance();
     }
     
@@ -17,7 +18,7 @@ class Premium_Modalbox extends Widget_Base {
     }
 
     public function get_title() {
-		return __( \PremiumAddons\Helper_Functions::get_prefix() . ' Modal Box', 'premium-addons-for-elementor' );
+		return sprintf( '%1$s %2$s', \PremiumAddons\Helper_Functions::get_prefix(), __('Modal Box', 'premium-addons-for-elementor') );
 	}
 
     public function get_icon() {
